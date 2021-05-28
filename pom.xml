@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.rivwox</groupId>
 	<artifactId>racing</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>racing</name>
 	<description>Something Something &lt;change&gt;</description>
 	<properties>
