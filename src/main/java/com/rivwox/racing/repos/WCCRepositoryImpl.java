@@ -104,7 +104,7 @@ public class WCCRepositoryImpl implements WCCRepository{
 
 	@Override
 	public List<Object[]> getbyChasisEngineWins(String chasis, String engine, Long wins) {
-		Query qy = em.createNativeQuery("SELECT * FROM wcc WHERE chasis=? AND engine=? AND wins");
+		Query qy = em.createNativeQuery("SELECT * FROM wcc WHERE chasis=? AND engine=? AND wins=?");
 		qy.setParameter(1, chasis);
 		qy.setParameter(2, engine);
 		qy.setParameter(3, wins);
