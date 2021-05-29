@@ -10,9 +10,7 @@ import com.rivwox.racing.repos.WDCRepository;
 import com.rivwox.racing.repos.WDCRepositoryImpl;
 
 @Service
-public class ConsService {
-//	@Autowired
-//	WDCRepository wdcrepo;
+public class WDCService {
 
 	@Autowired
 	WDCRepositoryImpl wdcrepoimpl;

@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.rivwox.racing.services.ConsService;
+import com.rivwox.racing.services.WDCService;
 
 @RestController
 @RequestMapping("/Racing")
 public class WDCController {
 	@Autowired
-	ConsService consServ;
+	WDCService consServ;
 
 	@GetMapping(value = "WDC")
-	public ResponseEntity<Object> getWDCbyyear(@RequestParam(value = "year", required = false) Long year,
+	public ResponseEntity<Object> getWDC(@RequestParam(value = "year", required = false) Long year,
 			@RequestParam String country, @RequestParam String chasis, @RequestParam String engine, @RequestParam String driver) {
 
 		ServiceResponse serviceres = new ServiceResponse();

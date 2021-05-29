@@ -23,4 +23,5 @@ public class MonacoGPWinners {
 
 	@Column(name = "team")
 	private String team;
+	
 }
