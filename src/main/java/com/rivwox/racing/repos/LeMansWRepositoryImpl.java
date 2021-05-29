@@ -7,27 +7,27 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import com.rivwox.racing.models.MonacoGPWinners;
+import com.rivwox.racing.models.LeMansWinners;
 
-public class MonacoWRepositoryImpl implements MonacoWRepository{
+public class LeMansWRepositoryImpl implements LeMansWRepository{
 	
 	@PersistenceContext
 	private EntityManager em;
-	
+
 	@Override
-	public <S extends MonacoGPWinners> S save(S entity) {
+	public <S extends LeMansWinners> S save(S entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends MonacoGPWinners> Iterable<S> saveAll(Iterable<S> entities) {
+	public <S extends LeMansWinners> Iterable<S> saveAll(Iterable<S> entities) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Optional<MonacoGPWinners> findById(Long id) {
+	public Optional<LeMansWinners> findById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -39,13 +39,13 @@ public class MonacoWRepositoryImpl implements MonacoWRepository{
 	}
 
 	@Override
-	public Iterable<MonacoGPWinners> findAll() {
+	public Iterable<LeMansWinners> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Iterable<MonacoGPWinners> findAllById(Iterable<Long> ids) {
+	public Iterable<LeMansWinners> findAllById(Iterable<Long> ids) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -63,7 +63,7 @@ public class MonacoWRepositoryImpl implements MonacoWRepository{
 	}
 
 	@Override
-	public void delete(MonacoGPWinners entity) {
+	public void delete(LeMansWinners entity) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -75,7 +75,7 @@ public class MonacoWRepositoryImpl implements MonacoWRepository{
 	}
 
 	@Override
-	public void deleteAll(Iterable<? extends MonacoGPWinners> entities) {
+	public void deleteAll(Iterable<? extends LeMansWinners> entities) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -85,19 +85,19 @@ public class MonacoWRepositoryImpl implements MonacoWRepository{
 		// TODO Auto-generated method stub
 		
 	}
-
+	
 	@Override
 	public List<Object[]> getbyYear(Long year) {
-		Query qy = em.createNativeQuery("SELECT * FROM monaco WHERE year=?");
-		qy.setParameter(1, year); 
-		List<Object[]> list = qy.getResultList(); 
+		Query qy = em.createNativeQuery("SELECT * FROM lemans WHERE year=?");
+		qy.setParameter(1, year);
+		List<Object[]> list = qy.getResultList();
 		return list;
 	}
 
 	@Override
-	public List<Object[]> getMonacoFull() { 	
-		Query qy = em.createNativeQuery("SELECT * FROM monaco");
-		List<Object[]> list = qy.getResultList(); 
+	public List<Object[]> lemansWinsFull() {
+		Query qy = em.createNativeQuery("SELECT * FROM lemans");
+		List<Object[]> list = qy.getResultList();
 		return list;
 	}
 
