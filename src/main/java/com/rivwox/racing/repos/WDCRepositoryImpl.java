@@ -119,4 +119,11 @@ public class WDCRepositoryImpl implements WDCRepository{
 		return list;
 	}
 
+	@Override
+	public List<Object[]> getChampsFull() {
+		Query qy = em.createNativeQuery("SELECT * FROM wdc");
+		List<Object[]> list = qy.getResultList();
+		return list;
+	}
+
 }

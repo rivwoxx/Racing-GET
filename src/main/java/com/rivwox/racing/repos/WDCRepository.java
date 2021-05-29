@@ -14,4 +14,5 @@ public interface WDCRepository extends CrudRepository<WorldDriversChamps,Long>{
 	public List<Object[]> getChampsbyCountry(String country);
 	public List<Object[]> getChampsbyContructorChasiscombList(String chasis, String engine);
 	public List<Object[]> getChampsbyDriver(String driver);
+	public List<Object[]> getChampsFull();
 }
