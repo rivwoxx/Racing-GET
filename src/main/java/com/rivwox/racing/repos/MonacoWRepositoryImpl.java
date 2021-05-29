@@ -94,4 +94,11 @@ public class MonacoWRepositoryImpl implements MonacoWRepository{
 		return list;
 	}
 
+	@Override
+	public List<Object[]> getMonacoFull() {
+		Query qy = em.createNativeQuery("SELECT * FROM monaco");
+		List<Object[]> list = qy.getResultList();
+		return list;
+	}
+
 }

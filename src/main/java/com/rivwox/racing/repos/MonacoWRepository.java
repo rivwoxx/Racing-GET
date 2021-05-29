@@ -11,4 +11,5 @@ import com.rivwox.racing.models.MonacoGPWinners;
 @Repository
 public interface MonacoWRepository extends CrudRepository<MonacoGPWinners,Long>{
 	public List<Object[]> getbyYear(Long year);
+	public List<Object[]> getMonacoFull();
 }
