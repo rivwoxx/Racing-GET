@@ -24,7 +24,6 @@ public class WDCController {
 		ServiceResponse serviceres = new ServiceResponse();
 		JsonNode result = null;
 
-
 		if (year == null && country != "" && chasis == "" && engine == "" && driver == "") {
 			result = consServ.getWDCbyCountry(country);
 		} else if (year != null && country == "" && chasis == "" && engine == "" && driver == "") {
