@@ -1,7 +1,13 @@
 # Racing-GET
 A simple GET service which brings information about racing sport events and some triple crown races and stuff;
 
-### Requires JAVA 11 to work;
+### Requirements
+```
+JAVA 11
+Maven 3.8.1
+Docker [not actually necessary]
+Peruvian Cumbia [somehow it fails if you are not listening while running it]: https://music.youtube.com/playlist?list=OLAK5uy_lknHRNpjy_K2HxVxqyLkkhX8XGJCQ-Jvs&feature=share
+```
 
 ### Application.Properties
 ##### Database conection works through applications.properties which is not included on this repository.
