@@ -11,7 +11,7 @@ https://music.youtube.com/playlist?list=OLAK5uy_lknHRNpjy_K2HxVxqyLkkhX8XGJCQ-Jv
 ```
 
 ### Application.Properties
-##### Database conection works through applications.properties which is not included on this repository.
+##### Database connection works through applications.properties which is not included on this repository.
 ##### Should be allocated on /src/main/resources
 ```
 spring.jpa.hibernate.ddl-auto = none
